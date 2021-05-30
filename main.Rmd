@@ -1,0 +1,44 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(igraph)
+library(langnetr)
+```
+
+```{r}
+data <- read_csv("mw_lexicon.csv")
+filtered_data <- data %>% 
+  filter(nchar(Klattese) == 2 | nchar(Klattese) == 3)
+
+words.net <- langnetr::tolangnet(filtered_data$Klattese[1:20])
+plot(words.net.labels,
+     vertex.label.color='black', 
+     vertex.label.dist=2.5)
+
+write_graph(words.net, "sample_graph.gml", format = "gml")
+```
+
+```{r}
+erGraph <- erdos.renyi.game(n = 20, p.or.m = gsize(words.net), type = 'gnm') %>%
+  plot
+
+write_graph(words.net, "er_graph.gml", format = "gml")
+```
+
+```{r}
+data <- read_csv("mw_lexicon.csv")
+filtered_data <- data %>% 
+  filter(nchar(Klattese) == 2 | nchar(Klattese) == 3)
+
+words.net <- langnetr::tolangnet(filtered_data$Klattese[20:40])
+plot(words.net.labels,
+     vertex.label.color='black', 
+     vertex.label.dist=2.5)
+
+write_graph(words.net, "sample_graph_2.gml", format = "gml")
+```
+
