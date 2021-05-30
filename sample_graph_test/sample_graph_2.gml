@@ -1,4 +1,4 @@
-Creator "igraph version 1.2.6 Sat May 29 22:10:03 2021"
+Creator "igraph version 1.2.6 Sun May 30 10:46:29 2021"
 Version 1
 graph
 [
@@ -6,52 +6,52 @@ graph
   node
   [
     id 0
-    name "1"
+    name "3"
   ]
   node
   [
     id 1
-    name "2"
-  ]
-  node
-  [
-    id 2
     name "4"
   ]
   node
   [
-    id 3
+    id 2
     name "5"
   ]
   node
   [
-    id 4
-    name "6"
-  ]
-  node
-  [
-    id 5
+    id 3
     name "7"
   ]
   node
   [
-    id 6
+    id 4
     name "8"
   ]
   node
   [
-    id 7
+    id 5
     name "9"
   ]
   node
   [
-    id 8
+    id 6
     name "10"
   ]
   node
   [
-    id 9
+    id 7
+    name "11"
+  ]
+  node
+  [
+    id 8
     name "12"
+  ]
+  node
+  [
+    id 9
+    name "13"
   ]
   node
   [
@@ -86,22 +86,27 @@ graph
   node
   [
     id 16
-    name "3"
+    name "20"
   ]
   node
   [
     id 17
-    name "11"
+    name "21"
   ]
   node
   [
     id 18
-    name "13"
+    name "1"
   ]
   node
   [
     id 19
-    name "20"
+    name "2"
+  ]
+  node
+  [
+    id 20
+    name "6"
   ]
   edge
   [
@@ -110,67 +115,97 @@ graph
   ]
   edge
   [
-    source 12
+    source 2
+    target 0
+  ]
+  edge
+  [
+    source 2
     target 1
   ]
   edge
   [
     source 3
-    target 2
+    target 1
   ]
   edge
   [
-    source 14
-    target 2
-  ]
-  edge
-  [
-    source 4
-    target 3
-  ]
-  edge
-  [
-    source 14
-    target 3
-  ]
-  edge
-  [
-    source 13
-    target 5
-  ]
-  edge
-  [
-    source 7
-    target 6
-  ]
-  edge
-  [
-    source 8
-    target 6
-  ]
-  edge
-  [
-    source 9
-    target 6
-  ]
-  edge
-  [
-    source 8
-    target 7
-  ]
-  edge
-  [
-    source 9
-    target 7
-  ]
-  edge
-  [
-    source 9
-    target 8
+    source 5
+    target 1
   ]
   edge
   [
     source 15
+    target 2
+  ]
+  edge
+  [
+    source 5
+    target 3
+  ]
+  edge
+  [
+    source 7
+    target 4
+  ]
+  edge
+  [
+    source 8
+    target 4
+  ]
+  edge
+  [
+    source 9
+    target 4
+  ]
+  edge
+  [
+    source 8
+    target 6
+  ]
+  edge
+  [
+    source 10
+    target 6
+  ]
+  edge
+  [
+    source 11
+    target 6
+  ]
+  edge
+  [
+    source 13
+    target 6
+  ]
+  edge
+  [
+    source 14
+    target 6
+  ]
+  edge
+  [
+    source 9
+    target 7
+  ]
+  edge
+  [
+    source 10
+    target 8
+  ]
+  edge
+  [
+    source 11
+    target 8
+  ]
+  edge
+  [
+    source 13
+    target 8
+  ]
+  edge
+  [
+    source 14
     target 8
   ]
   edge
@@ -180,7 +215,42 @@ graph
   ]
   edge
   [
-    source 12
+    source 13
     target 10
+  ]
+  edge
+  [
+    source 14
+    target 10
+  ]
+  edge
+  [
+    source 13
+    target 11
+  ]
+  edge
+  [
+    source 14
+    target 11
+  ]
+  edge
+  [
+    source 16
+    target 12
+  ]
+  edge
+  [
+    source 14
+    target 13
+  ]
+  edge
+  [
+    source 17
+    target 13
+  ]
+  edge
+  [
+    source 17
+    target 15
   ]
 ]
